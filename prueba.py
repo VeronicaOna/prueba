@@ -1,5 +1,5 @@
 def mostrar_menu():
-    print("1. Opción 1")
+    print("1. CastilloVera")
     print("2. Opción 2")
     print("3. Opción 3")
     print("4. Mendoza, Ruiz, Zurita ")
@@ -24,7 +24,28 @@ def mostrar_menu():
 def ejecutar_opcion(opcion):
     if opcion == 1:
         print("Ejecutando opción 1")
-        # Agregar código para la opción 1
+        def CastilloVera():
+            while True:
+                try:
+                    num=int(input("Ingrese entero positivo: "))
+                    if num>0:
+                        return num
+                    else:
+                        print("Ingresar entero positivo nuevamente")
+                except ValueError:
+                        print("Ingrese un numero valido")
+                        
+        def multiplo (num1,num2):
+            return num1%num2==0 or num2%num1==0
+        def main():
+            num1=CastilloVera()
+            num2=CastilloVera()
+            if multiplo (num1,num2):
+                print("1 Son multiplos")
+            else:
+                print("0 No son multiplos")
+        if __name__ == "__main__":
+            main()
     elif opcion == 2:
         print("Ejecutando opción 2")
         # Agregar código para la opción 2
