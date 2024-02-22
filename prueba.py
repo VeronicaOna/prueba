@@ -80,8 +80,40 @@ def ejecutar_opcion(opcion):
         print("Ejecutando opción 19")
         # Agregar código para la opción 19
     elif opcion == 20:
-        print("Ejecutando opción 20")
-        # Agregar código para la opción 20
+        print("Bacuy_Bustos_Cunalata")
+        def Bacuy_Bustos_Cunalata():
+            a= int(input("ingrese un numero:"))
+            b= int(input("Ingrse otro numero:"))
+            if (a % b) == 0:
+                print ("1")
+            elif (b % a) == 0:
+                print ("1")
+            elif (a % b)!= 0:
+                print ("0")
+            elif (b % a)!= 0:
+                print ("0")
+        def main():
+            while True:
+                try:
+                    if Bacuy_Bustos_Cunalata():
+                        if (a % b) == 0:
+                            print ("1")
+                        elif (b % a) == 0:
+                            print ("1")
+                        elif (a % b)!= 0:
+                            print ("0")
+                        elif (b % a)!= 0:
+                            print ("0")
+                    else:
+                        if Bacuy_Bustos_Cunalata ==1 :
+                            print ("no son multiplos")
+                        else:
+                            print ("son multiplos")
+                            break
+                except ValueError:
+                    print ("ingrese un valor valido")
+        if __name__ == "__main__":
+            main()
     elif opcion == 21:
         print("Saliendo del programa...")
         exit()
