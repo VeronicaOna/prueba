@@ -14,7 +14,7 @@ def mostrar_menu():
     print("13. Opción 13")
     print("14. Opción 14")
     print("15. Opción 15")
-    print("16. Opción 16")
+    print("16. Navarrete_Toapanta")
     print("17. Opción 17")
     print("18. Opción 18")
     print("19. Opción 19")
@@ -90,7 +90,29 @@ def ejecutar_opcion(opcion):
         # Agregar código para la opción 15
     elif opcion == 16:
         print("Ejecutando opción 16")
-        # Agregar código para la opción 16
+        def Navarrete_Toapanta():
+            while True:
+                try:
+                    num = int(input("Ingrese un número entero positivo: "))
+                    if num > 0:
+                        return num
+                    else:
+                        print("Inténtelo de nuevo.")
+                except ValueError:
+                    print("Ingrese de nuevo un número entero positivo")
+
+        def Multiplo():
+            n = Navarrete_Toapanta()
+            x = Navarrete_Toapanta()
+            if n % x == 0 or x % n == 0:
+                print(1, "Es múltiplo")
+            else:
+                print(0, "No es múltiplo")  
+
+        Multiplo()
+
+
+
     elif opcion == 17:
         print("Ejecutando opción 17")
         # Agregar código para la opción 17
