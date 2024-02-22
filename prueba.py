@@ -2,7 +2,7 @@ def mostrar_menu():
     print("1. Opción 1")
     print("2. Opción 2")
     print("3. Opción 3")
-    print("4. Opción 4")
+    print("4. Mendoza, Ruiz, Zurita ")
     print("5. Opción 5")
     print("6. Opción 6")
     print("7. Opción 7")
@@ -32,8 +32,29 @@ def ejecutar_opcion(opcion):
         print("Ejecutando opción 3")
         # Agregar código para la opción 3
     elif opcion == 4:
-        print("Ejecutando opción 4")
-        # Agregar código para la opción 4
+        print("Ejecutando Mendoza, Ruiz, Zurita")
+        def Mendoza_Ruiz_Zurita():
+            while True:
+                try:
+                    n1 = int(input("Ingrese el primer número: "))
+                    n2 = int(input("Ingrese el segundo número: "))
+                    if n1 > 0 and n2 > 0:
+                        break
+                    else:
+                        print("Por favor, ingrese números positivos.")
+                except ValueError:
+                    print("Dato incorrecto")
+            if n1 == 0 or n2 == 0:
+                return 0
+            elif n1 % n2 == 0 or n2 % n1 == 0:
+                return 1
+            else:
+                return 0
+        if __name__ == "__main__":
+            if Mendoza_Ruiz_Zurita():
+                print("1")
+            else:
+                print("0")
     elif opcion == 5:
         print("Ejecutando opción 5")
         # Agregar código para la opción 5
