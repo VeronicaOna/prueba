@@ -141,7 +141,6 @@ def ejecutar_opcion(opcion):
         print("Ejecutando opción 18")
         # Agregar código para la opción 18
     elif opcion == 19:
-        print("Ejecutando opción 19")
         def MorenoGusqui():
     while True:
         try:
@@ -152,6 +151,7 @@ def ejecutar_opcion(opcion):
                 print("Por favor, ingrese un número positivo.")
         except ValueError:
             print("Por favor, ingrese un número válido.")
+    
     while True:
         try:
             num2 = int(input("Ingrese el segundo número positivo: "))
@@ -161,10 +161,19 @@ def ejecutar_opcion(opcion):
                 print("Por favor, ingrese un número positivo.")
         except ValueError:
             print("Por favor, ingrese un número válido.")
+    
     if num1 % num2 == 0 or num2 % num1 == 0:
         print(1)
     else:
         print(0)
+
+def mostrar_menu():
+    print("1. Opción 1")
+    print("2. Opción 2")
+
+def ejecutar_opcion(opcion):
+    if opcion == 19:
+        MorenoGusqui()
 
 def main():
     while True:
@@ -174,6 +183,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+       
     elif opcion == 20:
         def Bacuy_Bustos_Cunalata():
             try:
