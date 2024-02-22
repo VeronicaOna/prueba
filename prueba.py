@@ -186,7 +186,7 @@ if __name__ == "__main__":
        
     elif opcion == 20:
         def Bacuy_Bustos_Cunalata():
-        try:
+            try:
                 a = int(input("Ingrese el primer número entero positivo: "))
                 b = int(input("Ingrese el segundo número entero positivo: "))
                 if a > 0 and b > 0:
