@@ -18,7 +18,7 @@ def mostrar_menu():
     print("17. Opción 17")
     print("18. Opción 18")
     print("19. Opción 19")
-    print("20. Opción 20")
+    print("20. Bacuy, Cunalata, Bustos")
     print("21. Salir")
 
 def ejecutar_opcion(opcion):
