@@ -175,38 +175,29 @@ def main():
 if __name__ == "__main__":
     main()
     elif opcion == 20:
-        print("Bacuy_Bustos_Cunalata")
         def Bacuy_Bustos_Cunalata():
-            a= int(input())
-            b= int(input())
-            if (a % b) == 0:
-                print ("1")
-            elif (b % a) == 0:
-                print ("1")
-            elif (a % b)!= 0:
-                print ("0")
-            elif (b % a)!= 0:
-                print ("0")
+            try:
+                a = int(input("Ingrese el primer número entero positivo: "))
+                b = int(input("Ingrese el segundo número entero positivo: "))
+                if a > 0 and b > 0:
+                    if (a % b) == 0 or (b % a) == 0:
+                        print("1")
+                    else:
+                        print("0")
+                else:
+                    print("Ambos números deben ser enteros positivos.")
+            except ValueError:
+                print("Ingrese un valor válido (número entero positivo).")
+
         def main():
             while True:
                 try:
-                    if Bacuy_Bustos_Cunalata():
-                        if (a % b) == 0:
-                            print ("1")
-                        elif (b % a) == 0:
-                            print ("1")
-                        elif (a % b)!= 0:
-                            print ("0")
-                        elif (b % a)!= 0:
-                            print ("0")
-                    else:
-                        if Bacuy_Bustos_Cunalata ==1 :
-                            print ("no son multiplos")
-                        else:
-                            print ("son multiplos")
-                            break
-                except ValueError:
-                    print ("ingrese un valor valido")
+                    Bacuy_Bustos_Cunalata()
+                    respuesta = input("¿Desea verificar otros números? (s/n): ")
+                    if respuesta.lower() != "s":
+                        break
+                except KeyboardInterrupt:
+                    print("\n¡Hasta luego!")
         if __name__ == "__main__":
             main()
     elif opcion == 21:
