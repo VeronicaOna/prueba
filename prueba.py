@@ -1,6 +1,6 @@
 def mostrar_menu():
     print("1. CastilloVera")
-    print("2. Opción 2")
+    print("2. Argotty, Manobanda, Monte")
     print("3. Opción 3")
     print("4. Mendoza, Ruiz, Zurita ")
     print("5. Opción 5")
@@ -48,7 +48,25 @@ def ejecutar_opcion(opcion):
             main()
     elif opcion == 2:
         print("Ejecutando opción 2")
-        # Agregar código para la opción 2
+        def verificar_multiplos():
+    while True:
+        try:
+            num1 = int(input("Ingrese el primer número entero positivo: "))
+            num2 = int(input("Ingrese el segundo número entero positivo: "))
+            
+            if num1 <= 0 or num2 <= 0:
+                raise ValueError("Ingrese números enteros positivos.")
+
+            if num1 % num2 == 0 or num2 % num1 == 0:
+                print("Verdadero")
+            else:
+                print("Falso")
+
+            break  
+
+        except ValueError as e:
+            print(f"Error: {e}. Por favor, ingrese números enteros positivos.")
+verificar_multiplos
     elif opcion == 3:
         print("Ejecutando opción 3")
         # Agregar código para la opción 3
