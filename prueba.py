@@ -48,25 +48,35 @@ def ejecutar_opcion(opcion):
             main()
     elif opcion == 2:
         print("Ejecutando opción 2")
-        def verificar_multiplos():
+        def Argotty_Manobanda_Monte(num1, num2):
+    
+    if num1 % num2 == 0 or num2 % num1 == 0:
+        return 1
+    else:
+        return 0 
+def main ():
     while True:
-        try:
-            num1 = int(input("Ingrese el primer número entero positivo: "))
-            num2 = int(input("Ingrese el segundo número entero positivo: "))
-            
-            if num1 <= 0 or num2 <= 0:
-                raise ValueError("Ingrese números enteros positivos.")
+         try:
+             num1= int(input("Ingrese el valor1: "))
+             num2= int(input("Ingrese el valor2: "))
+             if num1 <= 0 or num2 <= 0:
+                print("Ingrese un número entero positivo: " )
+                num1= int(input("Ingrese el valor1: "))
+                num2= int(input("Ingrese el valor2: "))
+             else:
+                 r= son_multiplos(num1,num2)
+                 if r:
+                     print(1)
+                 else:
+                     print(0)
+                   
+         except:
+            print("Error de ingreso: ")
+                   
 
-            if num1 % num2 == 0 or num2 % num1 == 0:
-                print("Verdadero")
-            else:
-                print("Falso")
-
-            break  
-
-        except ValueError as e:
-            print(f"Error: {e}. Por favor, ingrese números enteros positivos.")
-verificar_multiplos
+if __name__== "__main__":
+    main()
+       
     elif opcion == 3:
         print("Ejecutando opción 3")
         # Agregar código para la opción 3
