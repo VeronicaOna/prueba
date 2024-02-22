@@ -123,10 +123,9 @@ def ejecutar_opcion(opcion):
         print("Ejecutando opción 19")
         # Agregar código para la opción 19
     elif opcion == 20:
-        print("Bacuy_Bustos_Cunalata")
         def Bacuy_Bustos_Cunalata():
-            a= int(input("ingrese un numero:"))
-            b= int(input("Ingrse otro numero:"))
+            a= int(input())
+            b= int(input())
             if (a % b) == 0:
                 print ("1")
             elif (b % a) == 0:
